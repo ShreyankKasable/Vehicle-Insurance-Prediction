@@ -7,8 +7,7 @@
     5. Log Level
     6. Log rotation Policy (
         - Size-based rotation(e.g. rotate after 5MB).
-        - Time-based rotation(e.g. Daily).
-    )
+        - Time-based rotation(e.g. Daily).)
     """
 
 
@@ -34,7 +33,7 @@ LOG_FILE_PATH = os.path.join(LOG_DIR_PATH, LOG_FILE)
 
 def configure_logger():
     """
-    CONFIGURE_LOGGER
+    CONFIGURE_LOGGER use to configure all login steps
     :RETURN: None
     """
 
