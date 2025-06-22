@@ -17,3 +17,10 @@
 # except Exception as e:
 #     logging.info(e)
 #     raise MyException(e, sys) from e
+
+from src.pipeline.training_pipeline import TrainPipeline
+
+pipline = TrainPipeline()
+pipline.run_pipeline()
+
+# cmd /V /C "set MONGODB_URL=mongodb+srv://shreyankkasabale:av095TkFfzkaqBKg@cluster0.vzbcjhd.mongodb.net/?retryWrites=true^&w=majority^&appName=Cluster0"
