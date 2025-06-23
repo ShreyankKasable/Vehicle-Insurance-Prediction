@@ -39,7 +39,6 @@ class ProjectData:
             return df
 
         except Exception as e:
-            print("Hello")
             raise MyException(e, sys)
 
 
