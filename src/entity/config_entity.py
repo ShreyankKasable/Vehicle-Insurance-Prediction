@@ -47,3 +47,38 @@ class DataTransformationConfig:
                                                      DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR,
                                                      PREPROCESSING_OBJECT_FILE_NAME
                                                      )
+
+
+@dataclass
+class ModelTrainerConfig:
+    model_trainer_dir: str = os.path.join(training_pipeline_config.artifact_dir, MODEL_TRAINER_DIR_NAME)
+    trained_model_file_path: str = os.path.join(training_pipeline_config.artifact_dir, MODEL_TRAINER_TRAINED_MODEL_DIR, MODEL_FILE_NAME)
+    expected_accuracy: float = MODEL_TRAINER_EXPECTED_SCORE
+    model_config_file_path: str = MODEL_TRAINER_MODEL_CONFIG_FILE_PATH
+    _n_estimators = MODEL_TRAINER_N_ESTIMATORS
+    _min_samples_split = MODEL_TRAINER_MIN_SAMPLES_SPLIT
+    _min_samples_leaf = MODEL_TRAINER_MIN_SAMPLES_LEAF
+    _max_depth = MIN_SAMPLE_SPLIT_MAX_DEPTH
+    _criterion = MIN_SAMPLE_SPLIT_CRITERION
+    _random_state = MIN_SAMPLES_SPLIT_RANDOM_STATE
+
+    @property
+    def n_estimators(self):
+        return self._n_estimators
+
+    @property
+    def min_samples_split(self):
+        return self._min_samples_split
+
+    @property
+    def min_samples_leaf(self):
+        return self._min_samples_leaf
+
+    @property
+    def max_depth(self):
+        return self._max_depth
+
+    @property
+    def criterion(self):
+        return self._criterion
+
