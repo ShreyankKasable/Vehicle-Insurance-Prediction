@@ -73,8 +73,9 @@ MIN_SAMPLES_SPLIT_RANDOM_STATE: int = 101
 # MODEL EVALUATION RELATED CONSTANTS
 # ==================================
 MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
-MODEL_BUCKET_NAME = "my-model-mlopsproj"
+MODEL_BUCKET_NAME = "vehicle-insurance-prediction-mlops"
 MODEL_PUSHER_S3_KEY = "model-registry"
 
 APP_HOST = "0.0.0.0"
 APP_PORT = 5000
+
