@@ -13,7 +13,6 @@ Welcome to the **Vehicle Insurance MLOps Project** — a comprehensive end-to-en
 ### ✅ Step 2: Package Management
 
 * Define local package structure using `setup.py` and `pyproject.toml`.
-* 📄 See `crashcourse.txt` to understand these files.
 
 ### ✅ Step 3: Create and Activate Virtual Environment
 
